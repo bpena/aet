@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Card</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div style="width: 52%; text-align: center; margin: auto; padding: 0.5em 0;">
+		<div style="background: lightblue; padding: 0.5em 0;">
+			<div id="recarganueva" style="padding: 0.5em 0;">
+				<div style="display: inline-block;">
+					<span width="30">Tarjeta</span>
+					<input id="numero" type="text" />
+				</div>
+				<div style="display: inline-block;">
+					<span width="30">Nombre</span>
+					<input id="nombre" type="text" />
+				</div>
+				<div style="display: inline-block;">
+					<span width="30">Monto</span>
+					<input id="monto" type="text" />
+				</div>
+			</div>
+			<div style="padding: 0.5em 0;">
+				<button onclick="cardnew()">Recargar nueva tarjeta</button>
+			</div>
+		</div>
+		<div style="background: lightcoral; padding: 0.5em 0;">
+			<div id="card1" style="display: inline-block;">
+				<span id="numero1" width="30"></span>
+				<span id="monto1"></span>
+			</div>
+			<div style="padding: 0.5em 0;">
+				<span width="30">Transacción</span>
+				<input id="montotrx" type="text" />
+			</div>
+			<div style="padding: 0.5em 0;">
+				<button onclick="recargar()">Recargar</button>
+				<button onclick="consumir()">Consumir</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/@aeternity/aepp-sdk/dist/aepp-sdk.browser-script.js"></script>
+	<script src="card2.js"></script>
+</body>
+</html>
