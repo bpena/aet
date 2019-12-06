@@ -1,3 +1,5 @@
+nano
+
 const contractSource = `
 contract Card =
 
@@ -42,6 +44,8 @@ let card = {};
 let cards = [];
 
 let client;
+
+window.addEventListener('load', inicio);
 
 async function inicio() {
   //Initialize the Aepp object through aepp-sdk.browser.js, the base app needs to be running.
